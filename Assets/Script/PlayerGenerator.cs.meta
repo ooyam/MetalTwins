@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0c50c691f86207c4296980be6ce3fda0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - PlayerSword: {fileID: 3710370612140353581, guid: b1d3941d13923064faf05bd14e027ff8,
+      type: 3}
+  - PlayerGun: {fileID: 2572264284894648843, guid: 9ecbf06cfcabd4b47be6b4499aa4aac6,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
