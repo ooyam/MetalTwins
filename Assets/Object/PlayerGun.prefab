@@ -911,7 +911,7 @@ GameObject:
   - component: {fileID: 2574552183615332765}
   - component: {fileID: 2475875031600159697}
   m_Layer: 0
-  m_Name: Robot_Soldier_Rifle
+  m_Name: Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1367,9 +1367,11 @@ GameObject:
   - component: {fileID: 2574507010511558279}
   - component: {fileID: 2513563343875796983}
   - component: {fileID: 5135653862417238546}
+  - component: {fileID: 3348692766830647401}
+  - component: {fileID: -4258477806464912641}
   m_Layer: 0
   m_Name: PlayerGun
-  m_TagString: Untagged
+  m_TagString: PlayerGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1409,7 +1411,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: d376b72a0f9bdd143a31ff55fd39ec49, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1430,7 +1432,35 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!65 &3348692766830647401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2572264284894648843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.8, z: 1}
+  m_Center: {x: 0, y: 0.902, z: 0}
+--- !u!114 &-4258477806464912641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2572264284894648843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095545687373dc64b80d98b49e30f499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 4216455664855046224, guid: b06e8e60792b6674c91dffd03cf84082, type: 3}
+  ChangeEffectGun: {fileID: 547828873859433719, guid: 3f9dd13a886a79b43b01208c46d232cf,
+    type: 3}
 --- !u!1 &2572273534606307713
 GameObject:
   m_ObjectHideFlags: 0
@@ -2444,7 +2474,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2574757642571862083}
   - component: {fileID: 2476222039407011807}
-  - component: {fileID: 6826979639133333762}
   m_Layer: 0
   m_Name: Robot_Soldier_Body
   m_TagString: Untagged
@@ -2528,20 +2557,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00000010430813, y: -0.13416517, z: -0.022130996}
     m_Extent: {x: 0.35344887, y: 0.71062744, z: 0.23256883}
   m_DirtyAABB: 0
---- !u!136 &6826979639133333762
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2573261286083963021}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.3
-  m_Height: 1.8
-  m_Direction: 1
-  m_Center: {x: -0.00000010428576, y: 0.9, z: -0.0066938754}
 --- !u!1 &2573280458283544583
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - PlayerSword
+  - PlayerGun
+  - PlayerGenerator
+  - BackGround
+  - Canvas
+  - Sword
   layers:
   - Default
   - TransparentFX
